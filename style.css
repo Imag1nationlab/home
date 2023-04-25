@@ -1,0 +1,332 @@
+*{
+  padding: 0;
+  margin: 0%;
+  box-sizing: border-box;
+  
+ 
+}
+
+body{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-family: 'DM Sans', sans-serif;
+  
+}
+
+
+
+/*------------------------*/
+
+.navbar{
+  width: 1360px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  padding: 13px 0;
+
+}
+
+.logo{
+  border: 1px solid white;
+  margin: 0 30px;
+}
+
+.menu-items{
+  border: 1px solid white;
+  word-spacing: 50px;
+  margin: auto;
+  
+  
+}
+
+.menu-items a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid white;
+}
+
+.menu-items a:hover{
+  color: rgb(173, 173, 173);
+}
+
+.searchbox{
+  margin: 0 30px;
+}
+
+#search-box {
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+}
+
+#search-box #search-text{
+  background: none;
+  border: none;
+  outline: none;
+  background-color: none;
+  font-size: 18px;
+  width: 0;
+  padding: 0;
+  transition: all 0.5s;
+  
+}
+
+#search-box:hover #search-text, #search-box #search-text:valid{
+  width: 300px;
+  padding: 10px 15px;
+}
+
+#search-box #search-btn{
+  background-color: white;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 50%;
+  
+}
+
+#search-box #search-btn i{
+ 
+  padding: 5px 5px;
+}
+
+  
+
+  /*---------------------------------*/
+
+.container{
+  position: relative;
+  margin: auto;
+  width: 1360px;
+  overflow: hidden;
+}
+
+.wrapper{
+  width: 1360px;
+  display: flex;
+  animation: slide 8s infinite;
+  
+
+}
+
+.wrapper img{
+  
+}
+
+@keyframes slide{
+  0%{
+    transform: translateX(0%);
+  }
+  25%{
+    transform: translateX(0%);
+  }
+  30%{
+    transform: translateX(-100%);
+  }
+  50%{
+    transform: translateX(-100%);
+  }
+  55%{
+    transform: translateX(-200%);
+  }
+  75%{
+    transform: translateX(-200%);
+  }
+  80%{
+    transform: translateX(-300%);
+  }
+  100%{
+    transform: translateX(-300%);
+  }
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: -450px 580px;
+  position: absolute;
+  z-index: 1;
+  border: none;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+
+
+/*---------------------------------*/
+
+.info{
+ 
+  width: 1360px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative  ;
+}
+
+.info .contact{
+  width: 33.33%;
+ 
+}
+
+.info .contact ul{
+  list-style-type: none;
+  margin: 100px 100px;
+  text-align: center;
+  
+}
+
+.info .contact ul li a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 19px;
+  font-weight:lighter;
+}
+
+.info .services{
+  width: 33.33%;
+  
+}
+
+.info .services ul{
+  list-style-type: none;
+  margin: 100px 100px;
+  text-align: center;
+}
+
+.info .services ul li a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 19px;
+  font-weight:lighter;
+}
+
+.info .follow-us{
+  width: 33.33%;
+  
+}
+
+.info .follow-us ul{
+  list-style-type: none;
+  margin: 100px 150px;
+  text-align: center;
+}
+
+.info .follow-us ul li{
+  display: inline;
+}
+
+.info .follow-us ul li a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 19px;
+  font-weight:lighter;
+  padding: 5px;
+ 
+}
+.info .follow-us ul li a:hover{
+  color: gray;
+}
+
+.info .services ul li a:hover{
+  color: gray;
+}
+
+.info .contact ul li a:hover{
+  color: gray;
+}
+
+/*------------------------------------*/
+.container1{
+  width: 1360px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.container1 .rule{
+  
+  padding: 30px 50px;
+  margin: 10px 0;
+  
+}
+
+.container1 .rule a{
+  padding: 0 10px;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  
+}
+
+.container1 .language{
+  padding: 30px 80px;
+  margin: 10px 0;
+  
+}
+
+.container1 .language a{
+  text-decoration: none;
+  color: black;
+}
+
+.container1 .rule a:hover{
+  color: grey;
+}
+
+.copyright{
+  width: 1360px;
+  margin: auto;
+  text-align: center;
+  padding: 30px 0px;
+}
+
+@media screen and (max-width: 1080px){
+  .info {
+    flex-direction: column;
+    background-color: orange;
+    margin: auto;
+    display: flex;
+    
+}
+  .navbar{
+    background-color: orange;
+    margin: auto;
+    
+  }
+}
